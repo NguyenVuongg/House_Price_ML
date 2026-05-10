@@ -1,0 +1,59 @@
+ml_project/
+├── data/                      # Dữ liệu
+│   ├── raw/                   # Dữ liệu thô (không sửa)
+│   ├── processed/             # Dữ liệu đã xử lý
+│   └── external/              # Dữ liệu từ nguồn ngoài
+│
+├── notebooks/                 # Jupyter notebooks (EDA, experimentation)
+│   ├── 01_eda.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_modeling.ipynb
+│
+├── src/                       # Code chính (quan trọng nhất)
+│   ├── __init__.py
+│   ├── config/                # Cấu hình
+│   │   └── config.yaml
+│   ├── data/                  # Xử lý dữ liệu
+│   │   ├── make_dataset.py
+│   │   └── preprocess.py
+│   ├── features/              # Feature engineering
+│   │   └── build_features.py
+│   ├── models/                # Model training & prediction
+│   │   ├── train.py
+│   │   ├── predict.py
+│   │   └── model.py
+│   ├── evaluation/            # Đánh giá model
+│   ├── visualization/         # Biểu đồ
+│   └── utils/                 # Hàm tiện ích
+│
+├── models/                    # Model đã train (pickle, joblib, .h5, .pt...)
+├── reports/                   # Báo cáo, hình ảnh, metrics
+│   └── figures/
+│
+├── tests/                     # Unit test
+├── experiments/               # Theo dõi experiment (nếu không dùng MLflow)
+├── artifacts/                 # Artifacts từ training
+├── docker/                    # Dockerfile
+├── .github/                   # CI/CD
+├── requirements.txt
+├── requirements-dev.txt
+├── setup.py                   # Hoặc pyproject.toml
+├── README.md
+├── LICENSE
+├── Makefile                   # Tự động hóa lệnh
+├── dvc.yaml                   # Data version control (nếu dùng DVC)
+└── mlflow/                    # Experiment tracking
+
+
+
+
+### RUT GON
+project/
+├── data_raw/
+├── data_processed/
+├── notebooks/
+├── scripts/          # hoặc src/
+├── models/
+├── outputs/
+├── requirements.txt
+└── README.md
