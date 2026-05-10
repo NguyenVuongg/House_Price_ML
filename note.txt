@@ -1,3 +1,14 @@
+github
+
+git status / Kiểm tra file nào đang thay đổi.
+git add -A   / Đưa tất cả file thay đổi vào vùng chuẩn bị commit.
+git commit -m "Mô tả thay đổi"  / Tạo commit.
+git push  / Đẩy commit lên GitHub.
+
+Nếu GitHub báo remote có thay đổi mới hơn local, chạy:
+git pull
+git push
+
 ml_project/
 ├── data/                      # Dữ liệu
 │   ├── raw/                   # Dữ liệu thô (không sửa)
