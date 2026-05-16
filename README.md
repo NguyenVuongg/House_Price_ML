@@ -142,3 +142,18 @@ File `main.py` hiện chỉ là entry point mẫu và chưa điều phối pipel
 - Cấu trúc thư mục ML đã được tạo
 - `requirements.txt` đã có các thư viện cơ bản
 - Các file trong `src/`, notebook và model đang là placeholder, cần triển khai thêm để chạy được pipeline hoàn chỉnh
+
+## Load Data and Add Eda -> analyze data and plot
+
+## Pre Progress 
+
+    #Pipeline
+Housing.csv
+    ↓ preprocess.py
+    encode → cap outliers → log(price) → split → scale → lưu train/test.csv + scaler.pkl
+    ↓ train.py
+    thử 5 models → so sánh → lưu best → house_price_model.pkl
+    ↓ evaluate.py
+    Actual vs Predicted plot + Residual plot
+    ↓ predict.py
+    nhập thông tin nhà mới → trả về giá dự đoán
