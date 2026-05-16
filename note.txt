@@ -68,3 +68,7 @@ project/
 ├── outputs/
 ├── requirements.txt
 └── README.md
+
+data/processed/ — lưu data sau khi clean/feature engineering
+notebook/modeling.ipynb — tách riêng EDA và thử nghiệm model
+src/config.py — tập trung paths, hyperparameters, constants
